@@ -1,0 +1,35 @@
+@apiProducts = http://localhost:3000/products
+
+GET {{apiProducts}}
+
+### 
+GET {{apiProducts}}/count
+
+###
+GET {{apiProducts}}/10
+
+###
+POST {{apiProducts}}
+Content-Type: application/json
+
+{
+    "name": "Galaxy S23",
+    "description": "Samsung's Androir phone",
+    "quantity": 20
+  
+}
+
+###Update a product
+PUT {{apiProducts}}/10
+Content-Type: application/json
+
+{
+    "name": "Iphone 14",
+    "description": "Apple's phone",
+    "quantity": 40
+  
+}
+
+###
+DELETE {{apiProducts}}/5
+
